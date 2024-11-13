@@ -1,0 +1,26 @@
+.dropdown {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 14, 28, 0.8) 0%,
+        rgba(0, 14, 28, 0.6) 50%,
+        rgba(0, 14, 28, 0.4) 100%
+    );
+    border-radius: 0.5rem; /* Rounded corners for the dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    padding: 1rem; /* Add some padding inside the dropdown */ 
+    z-index: 10; /* Ensure it appears above other elements */
+    width: 100%; /* Full width to align with the service items */
+
+    &__item {
+        color: #fcffe7; /* Light text color */
+        font-size: 2rem; /* Text size for the items */
+        font-weight: 400; /* Light weight */
+        padding: 0.5rem 1rem; /* Padding around each item */
+        transition: background 0.3s; /* Smooth background change on hover */
+
+        &:hover {
+            background: rgba(0, 14, 28, 0.3); /* Background change on hover */
+            cursor: pointer; /* Pointer cursor for interactivity */
+        }
+    }
+}
